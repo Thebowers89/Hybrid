@@ -1,0 +1,100 @@
+`|Ingredients`
+`Bagel` `Ingredients: Dough Circle` `Assembly: Oven, 3 Seconds Low`
+`Butter` `Ingredients: Cream` `Assembly: Food Processor`
+`Butt-er` `Ingredients: Butt + Milk` `Assembly: Mixer` `Condiment`
+`Cake Batter` `Ingredients: 2x Sweet Dough + Egg` `Assemby: Mixer`
+`Cheese` `Ingredients: Milk + Vomit` `Assembly: Fire Extinguisher`
+`Chips` `Ingredients: Potato` `Assembly: Chop twice with knife`
+`Chocolate Chips` `Ingredients: Candy Bar` `Assembly: Food Processor` `Condiment`
+`Coconut Meat` `Ingredients: Coconut` `Assembly: Chop with knife`
+`Cookie Dough` `Ingredients: Sweet Dough` `Assembly: Chop with knife`
+`Cream` `Ingredients: Milk` `Assembly: Food Processor` `Condiment`
+`Crumpet` `Ingredients: Holey Dough` `Assembly: Oven, 3 Seconds Low`
+`Custard` `Ingredients: Milk + Egg` `Assembly: Mixer` `Condiment`
+`Donut` `Ingredients: Dough Circle + Sugar` `Assembly: Oven, 3 Seconds Low`
+`Dough` `Ingredients: Flour` `Assembly: Sink`
+`Dough Circle` `Ingredients: Dough Strip` `Assembly: In hand`
+`Dough Strip` `Ingredients: Dough` `Assembly: Chop with knife`
+`Fish Fillet` `Ingredients: Fish` `Assembly: Chop with knife`
+`Flour` `Ingredients: Wheat` `Assembly: Food Processor`
+`Half Finished Pizza Base` `Ingredients: Unfinished Pizza Base + Ketchup` `Assembly: In Hand`
+`Holey Dough` `Ingredients: Dough` `Assembly: Stab with fork`
+`Hot Sauce` `Ingredients: Chili` `Assembly: Food Processor` `Condiment`
+`Human Meat` `Ingredients: Human` `Assembly: Gibber`
+`Ice Cream Cone` `Ingredients: Sweet Dough + Sugar` `Assembly: Oven, 1 Second Low`
+`Iron Fillings` `Ingredients: Steelwheat` `Assembly: Food Processor`
+`Ketchup` `Ingredients: Tomato` `Assembly: Food Processor`
+`Loaf of Banana Bread` `Ingredients: Dough + Sugar + Peeled Banana` `Assembly: Oven, 1 Second Low`
+`Loaf of Brain Bread` `Ingredients: Loaf of Bread + Brain` `Assembly: Oven, 6 Seconds Low`
+`Loaf of Bread` `Ingredients: Dough` `Assembly: Oven, 1 Second Low`
+`Loaf of Elvis Bread` `Ingredients: Dough + Peanut Butter + Peeled Banana` `Assembly: 6 Seconds Low`
+`Loaf of Dread` `Ingredients: Dough + Ectoplasm` `Assembly: Oven, 6 Seconds Low`
+`Loaf of Honey Cornbread` `Ingredients: Dough + Corn + Honey` `Assembly: Oven, 6 Seconds Low`
+`Loaf of Honey Wheat Bread` `Ingredients: Dough + Corn` `Assembly: Oven, 1 Second Low`
+`Loaf of Northern Style Cornbread` `Ingredients: Dough + Sugar + Corn` `Assembly: Oven, 6 Seconds Low`
+`Loaf of Pumpkin Bread` `Ingredients: Dough + Pumpkin` `Assembly: Oven, 6 Seconds Low`
+`Loaf of Southern Style Cornbread` `Ingredients: Dough + Corn` `Assembly: Oven, 6 Seconds Low`
+`Makizushi Roll` `Ingredients: Fish Fillet + Rice Ball` `Assembly: Oven, 6 Seconds Low`
+`Mayonnaise` `Ingredients: Egg` `Assembly: Food Processor`
+`Meatball` `Ingredients: Meat/Brain/Butt` `Assembly: Food Processor`
+`Meat Paste` `Ingredients: Meat` `Assembly: Mixer`
+`Monkey Meat` `Ingredients: Monkey` `Assembly: Meat Spike`
+`Oatmeal` `Ingredients: Oats` `Assembly: Food Processor`
+`Onigiri` `Ingredients: Rice Ball + Seaweed Sheet` `Assembly: Hand`
+`Onion Ring` `Ingredients: Onion` `Assembly: Chop the friggin onion m9`
+`Pancake Batter` `Ingredients: Sweet Dough + 2x Egg + Milk` `Assembly: Mixer`
+`Pasta Sheet` `Ingredients: Semolina Dough` `Assembly: Rolling Pin`
+`Peanut Butter` `Ingredients: Peanuts` `Assembly: Food Processor`
+`Pineapple Ring` `Ingredients: Pineapple` `Assembly: Knife`
+`Pizza Base` `Ingredients: Half Finished Pizza Base + Cheese` `Assembly: Hand`
+`Rice` `Ingredients: Rice Sprig` `Assembly: Food Processor`
+`Rice Ball` `Ingredients: Sticky Rice` `Assembly: Hand`
+`Semolina Dough` `Ingredients: Semolina Flour` `Assembly: Food Processor`
+`Semolina Flour` `Ingredients: Durum Wheat` `Assembly: Food Processor`
+`Seaweed Sheet` `Ingredients: Seaweed` `Assembly: Harvest With Wirecutters`
+`Slice of Bread` `Ingredients: Any Loaf of Bread` `Assembly: Knife`
+`Spaghetti` `Ingredients: Pasta Sheet` `Assembly: Food Processor`
+`Sticky Rice` `Ingredients: Rice` `Assembly: Sink`
+`Sugar` `Ingredients: Sugarcane` `Assembly: Food Processor`
+`Sushi Roll` `Ingredients: Fish Fillet + Rice Ball + Seaweed Sheet` `Assembly: Oven, 6 Seconds Low`
+`Sweet Dough` `Ingredients: Dough + Sugar` `Assembly: Hand`
+`Tortilla` `Ingredients: Unfinished Pizza Base` `Assembly: Knife`
+`Unfinished Pizza Base` `Ingredients: Dough` `Assembly: Rolling Pin`
+`Wonton Wrapper` `Ingredients: Flour + Egg` `Assembly: Mixer`
+`Yoghurt` `Ingredients: Rancid Milk` `Assembly: Food Processor`
+`|Phude`
+`Apple On A Stick` `Ingredients: Apple + Metal Rod` `Assembly: Hand`
+`Bacon and Eggs` `Ingredients: 2x Bacon Strip + 2x Egg` `Assembly: Oven, 8 Seconds High`
+`Baked Potato` `Ingredients: Potato` `Assembly: Oven, 9 Seconds High`
+`Brainburger` `Ingredients: Flour + Brain` `Assembly: Oven, 6 Seconds High`
+`Candy Apple` `Ingredients: Apple On A Stick + Sugar` `Assembly: Oven, 5 Seconds Low`
+`Chili Con Carne` `Ingredients: Meat + Chili` `Assembly: Oven, 6 Seconds High`
+`Chili Con Flagration` `Ingredients: Meat + Chili + 2x Hot Sauce` `Assembly: Oven, 6 Seconds High`
+`Club` `Ingredients: Slice of Bread + Up to 6 Food Items + 2x Slice of Bread` `Assembly: Oven, 6 Seconds High`
+`Corndog` `Ingredients: Hot Dog + Metal Rod` `Assembly: Hand`
+`Coronator` `Ingredients: Dough + 2x Meat + Cheese` `Oven, 9 Seconds High`
+`Dagwood` `Ingredients: Slice of Bread + Up to 6 Food Items + 4x Slice of Bread`
+`Deep Space Hell Omelette` `Ingredients: Meat + 2x Cheese + Space Bee Egg` `Assembly: Oven, 7 Seconds High`
+`Double Decker Sandwich` `Ingredients: Slice of Bread + Up to 6 Food Items + 3x Slice of Bread` `Assembly: Oven, 6 Seconds High`
+`Eggs on Toast` `Ingredients: Slice of Bread + 2x Egg` `Assembly: Oven, 6 Seconds Low`
+`El Diablo` `Ingredients: Chili Con Carne + Chili Con Flagration + Chili + Hot Sauce` `Assembly: Oven, 10 Seconds High`
+`Fish Fingers` `Ingredients: Fish Fillet` `Assembly: Oven, 9 Seconds Low`
+`Fries` `Ingredients: Chips` `Assembly: Oven, 7 Seconds Low`
+`Herbal Sausage` `Ingredients: Hotdog + Any Herb` `Assembly: Hand`
+`Hotdog` `Ingredients: 2x Meatball` `Assembly: Oven, 6 Seconds Low`
+`Hotdog In A Bun` `Ingredients: Hotdog/Herbal Sausage + Slice of Bread` `Assembly: Hand`
+`Ice Cream` `Ingredients: Ice Cream Cone` `Assembly: Ice Cream Machine`
+`Mashed Potatoes` `Ingredients: 3x Potato` `Assembly: Mixer`
+`Omelette` `Ingredients: Meat + 2x Cheese + Egg` `Assembly: Oven, 7 Seconds High`
+`Pizza` `Ingredients: Pizza Base + Any Food Item` `Assembly: Hand`
+`Plain Spaghetti` `Ingredients: Spaghetti` `Assembly: Oven, 8 Seconds High`
+`Roburger` `Ingredients: Dough + Cyborg Head` `Assembly: Oven, 6 Seconds High`
+`Spaghetti Arrabiata` `Ingredients: Spaghetti + Hot Sauce or Spaghetti in Sauce + Hot Sauce by Hand` `Assembly: Oven, 8 Seconds High`
+`Spaghetti in Sauce` `Ingredients: Plain Spaghetti + Ketchup` `Assembly: Hand`
+`Spaghetti With Meatballs` `Ingredients: Spaghetti + Meatball` `Assembly: Oven, 8 Seconds High`
+`Swedish Meatballs` `Ingredients: Flour + Egg + 2x Meatball` `Assembly: Oven, 6 Seconds High`
+`Synthorange` `Ingredients: Orange + Synthmeat` `Assembly: Hand`
+`THE MONSTER` `Ingredients: 4x The Coronator` `Assembly: Oven, 9 Seconds Low`
+`Toast` `Ingredients: Slice of Bread` `Assembly: Oven, 6 Seconds Low`
+`Warm Donk Pocket` `Ingredients: Dough + Meatball` `Assembly: Oven, 7 Seconds High`
+`Warm Honk Pocket` `Ingredients: Dough + Meatball + Bike Horn` `Assembly: Oven, 7 Seconds High`
