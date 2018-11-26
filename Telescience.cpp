@@ -10,8 +10,11 @@ void Telescience::init(){
         load();
     }else if(saveload=="build"){
         build();
+    }else if(saveload=="inpbuild"){
+        inpbuild();
     }else if(saveload=="help") {
         cout << "build: builds a new offset equation" << endl
+        << "inpbuild: builds a new equation from existing offsets" << endl
         << "load: loads the last built equation" << endl
         << "exit/e: exits program or current branch" << endl;
         init();
@@ -21,11 +24,13 @@ void Telescience::init(){
         init();
     }
 }
-int Telescience::input(auto b) {
+int Telescience::input(auto b, int a) {
     if(!(cin >> *b)) {
         cin.clear();
         cin.ignore(1000, '\n');
-        cout << "Invalid Data Type" << endl;
+        if(a==1){
+            cout << "Invalid Data Type" << endl;
+        }
         return 0;
     }
     return 1;
@@ -34,45 +39,73 @@ void Telescience::find(){
     exit = "n";
     while(exit=="n") {
         cout << "Desired X: ";
-        while(input(&xout1)!=1) {
-            cout << "Desired X: ";
+        if(input(&xout1,0)!=1) {
+            exit = "y";
         }
-        cout << "Desired Y: ";
-        while(input(&yout1)!=1) {
+        if(exit!="y") { 
             cout << "Desired Y: ";
+            if(input(&yout1,0)!=1) {
+                exit = "y";
+            }
         }
-        cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
-        cout << "Exit? y/n" << endl;
-        cin.ignore();
-        getline(cin,exit);
+        if(exit!="y") {
+            cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl << endl;
+        }
     }
-    init();
+    sof();
 }
 void Telescience::allinputs() {
     cout << "X input value: ";
-    while(input(&xin)!=1) {
+    while(input(&xin,1)!=1) {
         cout << "X input value: ";
     }
     cout << "Y input value: ";
-    while(input(&yin)!=1) {
+    while(input(&yin,1)!=1) {
         cout << "Y input value: ";
     }
     cout << "X result value: ";
-    while(input(&xout1)!=1) {
+    while(input(&xout1,1)!=1) {
         cout << "X result value: ";
     }
     cout << "Y result value: ";
-    while(input(&yout1)!=1) {
+    while(input(&yout1,1)!=1) {
         cout << "Y result value: ";
     }
     cout << "Second X result value: ";
-    while(input(&xout2)!=1) {
+    while(input(&xout2,1)!=1) {
         cout << "Second X result value: ";
     }
     cout << "Second Y result value: ";
-    while(input(&yout2)!=1) {
+    while(input(&yout2,1)!=1) {
         cout << "Second Y result value: ";
     }
+}
+void Telescience::save(){
+    ofstream saveFile("CurrentEquation.txt");
+    saveFile << mx << ' ' << my << ' ' << cx << ' ' << cy;
+    saveFile.close();
+    cout << "Equation Built!" << endl;
+}
+void Telescience::inpbuild(){
+    cout << "MX: ";
+    while(input(&mx,1)!=1) {
+        cout << "MX: ";
+    }
+    cout << "MY: ";
+    while(input(&my,1)!=1) {
+        cout << "MY: ";
+    }
+    cout << "CX: ";
+    while(input(&cx,1)!=1) {
+        cout << "CX: ";
+    }
+    cout << "CY: ";
+    while(input(&cy,1)!=1) {
+        cout << "CY: ";
+    }
+    save();
+    cin.ignore();
+    sof();
 }
 void Telescience::build(){
     allinputs();
@@ -80,10 +113,7 @@ void Telescience::build(){
     my = yout2-yout1;
     cx = xout1-mx*xin;
     cy = yout1-my*yin;
-    ofstream saveFile("CurrentEquation.txt");
-    saveFile << mx << ' ' << my << ' ' << cx << ' ' << cy;
-    saveFile.close();
-    cout << "Equation Built!" << endl;
+    save();
     cin.ignore();
     sof();
 }
@@ -91,12 +121,6 @@ void Telescience::load(){
     ifstream saveFile("CurrentEquation.txt");
     saveFile >> mx >> my >> cx >> cy;
     saveFile.close();
-    cout << "Output finished equation? y/n" << endl << "> ";
-    getline(cin,yn);
-    if(yn=="y"){
-        cout << "X Equation" << "(X-" << cx << ")/" << mx << endl;
-        cout << "Y Equation" << "(Y-" << cy << ")/" << my << endl;
-    }
     sof();
 }
 
@@ -117,13 +141,19 @@ void Telescience::tsearch(){
     }
 }
 void Telescience::sof(){
-    cout << "'search', 'find', or 'list'?" << endl << "> ";
+    cout << "'find', 'search', 'list', or 'print'?" << endl << "> ";
     getline(cin,sf);
     if(sf == "list" || sf == "search") {
         tsearch();
         sof();
     }else if(sf == "find") {
         find();
+    }else if(sf == "print") {
+        cout << "MX: " << mx << " " << "MY: " << my << " " << "CX: " << cx << " "
+             << "CY: " << cy << " " << endl << endl
+             << "X Equation" << "(X-" << cx << ")/" << mx << endl
+             << "Y Equation" << "(Y-" << cy << ")/" << my << endl;
+        sof();
     }else if(sf == "exit" || sf == "e") {
         init();
     }else{

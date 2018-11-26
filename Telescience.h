@@ -6,9 +6,11 @@ using namespace std;
 class Telescience {
 public:
     void init();
-    int input(auto b);
+    int input(auto b, int a);
     void find();
     void allinputs();
+    void save();
+    void inpbuild();
     void build();
     void load();
     void sof();
