@@ -1,2 +1,0 @@
-`|Example`
-`Example Coordinates` `123` `456`
