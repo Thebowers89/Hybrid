@@ -6,14 +6,14 @@ using namespace std;
 class Telescience {
 public:
     void init();
-    int input(auto b, int a);
-    void find();
-    void allinputs();
-    void save();
-    void inpbuild();
-    void build();
     void load();
+    void save();
+    int input(auto b, int a);
+    void allinputs();
+    void build();
+    void inpbuild();
     void sof();
+    void find();
     void tsearch();
 private:
     string saveload,exit,yn,sf;

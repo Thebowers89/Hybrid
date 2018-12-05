@@ -24,6 +24,18 @@ void Telescience::init(){
         init();
     }
 }
+void Telescience::load(){
+    ifstream saveFile("CurrentEquation.txt");
+    saveFile >> mx >> my >> cx >> cy;
+    saveFile.close();
+    sof();
+}
+void Telescience::save(){
+    ofstream saveFile("CurrentEquation.txt");
+    saveFile << mx << ' ' << my << ' ' << cx << ' ' << cy;
+    saveFile.close();
+    cout << "Equation Built!" << endl;
+}
 int Telescience::input(auto b, int a) {
     if(!(cin >> *b)) {
         cin.clear();
@@ -34,25 +46,6 @@ int Telescience::input(auto b, int a) {
         return 0;
     }
     return 1;
-}
-void Telescience::find(){
-    exit = "n";
-    while(exit=="n") {
-        cout << "Desired X: ";
-        if(input(&xout1,0)!=1) {
-            exit = "y";
-        }
-        if(exit!="y") { 
-            cout << "Desired Y: ";
-            if(input(&yout1,0)!=1) {
-                exit = "y";
-            }
-        }
-        if(exit!="y") {
-            cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl << endl;
-        }
-    }
-    sof();
 }
 void Telescience::allinputs() {
     cout << "X input value: ";
@@ -80,11 +73,15 @@ void Telescience::allinputs() {
         cout << "Second Y result value: ";
     }
 }
-void Telescience::save(){
-    ofstream saveFile("CurrentEquation.txt");
-    saveFile << mx << ' ' << my << ' ' << cx << ' ' << cy;
-    saveFile.close();
-    cout << "Equation Built!" << endl;
+void Telescience::build(){
+    allinputs();
+    mx = xout2-xout1;
+    my = yout2-yout1;
+    cx = xout1-mx*xin;
+    cy = yout1-my*yin;
+    save();
+    cin.ignore();
+    sof();
 }
 void Telescience::inpbuild(){
     cout << "MX: ";
@@ -107,39 +104,6 @@ void Telescience::inpbuild(){
     cin.ignore();
     sof();
 }
-void Telescience::build(){
-    allinputs();
-    mx = xout2-xout1;
-    my = yout2-yout1;
-    cx = xout1-mx*xin;
-    cy = yout1-my*yin;
-    save();
-    cin.ignore();
-    sof();
-}
-void Telescience::load(){
-    ifstream saveFile("CurrentEquation.txt");
-    saveFile >> mx >> my >> cx >> cy;
-    saveFile.close();
-    sof();
-}
-
-void Telescience::tsearch(){
-    Global global;
-    int test=1;
-    while(test==1) {
-        if(sf == "list"||sf == "search"){
-            if(global.search(sf,"Coordinates.txt",3,2)==1) {
-                test=0;
-            }else{
-                xout1=global.pub1;
-                yout1=global.pub2;
-                cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
-            }
-        }
-        sf = "search";
-    }
-}
 void Telescience::sof(){
     cout << "'find', 'search', 'list', or 'print'?" << endl << "> ";
     getline(cin,sf);
@@ -159,5 +123,40 @@ void Telescience::sof(){
     }else{
         cout << "Invalid Command" << endl;
         sof();
+    }
+}
+void Telescience::find(){
+    exit = "n";
+    while(exit=="n") {
+        cout << "Desired X: ";
+        if(input(&xout1,0)!=1) {
+            exit = "y";
+        }
+        if(exit!="y") { 
+            cout << "Desired Y: ";
+            if(input(&yout1,0)!=1) {
+                exit = "y";
+            }
+        }
+        if(exit!="y") {
+            cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl << endl;
+        }
+    }
+    sof();
+}
+void Telescience::tsearch(){
+    Global global;
+    int test=1;
+    while(test==1) {
+        if(sf == "list"||sf == "search"){
+            if(global.search(sf,"Coordinates.txt",3,2)==1) {
+                test=0;
+            }else{
+                xout1=global.pub1;
+                yout1=global.pub2;
+                cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
+            }
+        }
+        sf = "search";
     }
 }
