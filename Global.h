@@ -13,6 +13,7 @@ public:
     void loop();
     int search(string lcmd, string lfile, int lelm, int lall);
     double pub1,pub2;
+    int pub3;
 private:
     string inp, cmd, file;
     int all, elm;

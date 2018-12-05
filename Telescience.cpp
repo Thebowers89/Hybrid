@@ -152,9 +152,13 @@ void Telescience::tsearch(){
             if(global.search(sf,"Coordinates.txt",3,2)==1) {
                 test=0;
             }else{
-                xout1=global.pub1;
-                yout1=global.pub2;
-                cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
+                if(global.pub3==1){
+                    xout1=global.pub1;
+                    yout1=global.pub2;
+                    cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
+                }else{
+                    cout << "Unknown Coordinates" << endl;
+                }
             }
         }
         sf = "search";

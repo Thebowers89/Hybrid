@@ -82,7 +82,10 @@ void Global::read(string a) {
             }else if(cmd=="tsearch") {
                 pub1=todouble(sarray[1]);
                 pub2=todouble(sarray[2]);
+                pub3=1;
             }
+        }else{
+            pub3=0;
         }
     }else if(cmd=="list"){
         if(contains(sarray[0],'|') == 1) {
