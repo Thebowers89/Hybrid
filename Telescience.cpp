@@ -156,6 +156,7 @@ void Telescience::tsearch(){
                     xout1=global.pub1;
                     yout1=global.pub2;
                     cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
+                    global.pub3=0;
                 }else{
                     cout << "Unknown Coordinates" << endl;
                 }

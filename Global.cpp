@@ -84,8 +84,6 @@ void Global::read(string a) {
                 pub2=todouble(sarray[2]);
                 pub3=1;
             }
-        }else{
-            pub3=0;
         }
     }else if(cmd=="list"){
         if(contains(sarray[0],'|') == 1) {
