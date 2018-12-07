@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 void Telescience::init(){
-    cout << "Telescience 4.0" << endl << "> ";
+    cout << "Telescience 5.0" << endl << "> ";
     getline(cin,saveload);
     if(saveload=="load") {
         load();
@@ -148,7 +148,7 @@ void Telescience::tsearch(){
     Global global;
     int test=1;
     while(test==1) {
-        if(sf == "list"||sf == "search"){
+        if(sf == "list"||sf == "search"){ //unnecessary check?
             if(global.search(sf,"Coordinates.txt",3,2)==1) {
                 test=0;
             }else{
@@ -156,6 +156,16 @@ void Telescience::tsearch(){
                     xout1=global.pub1;
                     yout1=global.pub2;
                     cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl;
+                    global.pub3=0;
+                }else if(global.pub3==2){
+                    int vecsize = global.pubvec.end()-global.pubvec.begin();
+                    for(int x=0; x<vecsize-1;x++){
+                        cout << endl << "Enter item name: " << global.pubvec[x] << endl;
+                        xout1=global.todouble(global.pubvec[++x]);
+                        yout1=global.todouble(global.pubvec[++x]);
+                        cout << "Input X: " << (xout1-cx)/mx << " Input Y: " << (yout1-cy)/my << endl << endl;
+                    }
+                    global.pubvec.clear();
                     global.pub3=0;
                 }else{
                     cout << "Unknown Coordinates" << endl;

@@ -64,7 +64,17 @@ void Global::read(string a) {
         a.replace(endpnt,1,"");
         sarray[el] = a.substr(strtpnt,endpnt-strtpnt);
         el++;
-     }
+    }
+    if(cat==1){
+        if(contains(sarray[0],'|')==0){
+            pubvec.push_back(sarray[0]);
+            pubvec.push_back(sarray[1]);
+            pubvec.push_back(sarray[2]);
+        }else{
+            cat=0;
+            pub3=2;
+        }
+    }
     if(all==2){
         if(cmd=="search") {
             cmd="tsearch";
@@ -84,6 +94,10 @@ void Global::read(string a) {
                 pub2=todouble(sarray[2]);
                 pub3=1;
             }
+        }else if(ignorecase(inp) == ignorecase(sarray[0]) && contains(inp,'|') == 1){
+            if(cat==0){
+                cat=1;
+            }
         }
     }else if(cmd=="list"){
         if(contains(sarray[0],'|') == 1) {
@@ -100,7 +114,6 @@ void Global::loop(){
         getline(cin,inp);
     }
     ifstream infile(file);
-    string a; //possible memory issue?
     while(getline(infile,a)) {
         auto thing = a.rfind('\r');
         if(thing != string::npos)

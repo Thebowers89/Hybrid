@@ -1,6 +1,7 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 #include <string>
+#include <vector>
 using namespace std;
 
 class Global {
@@ -14,9 +15,10 @@ public:
     int search(string lcmd, string lfile, int lelm, int lall);
     double pub1,pub2;
     int pub3;
+    vector<string> pubvec;
 private:
-    string inp, cmd, file;
-    int all, elm;
+    string inp, cmd, file, a;
+    int all, elm, cat=0;
 };
 
 #endif
