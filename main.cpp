@@ -6,7 +6,7 @@
 using namespace std;
 
 string cmd;
-//We're on MinGW Now :D
+
 void init(){
     cout << "SS13 Program Hub v1.0" << endl << "> ";
     getline(cin,cmd);
