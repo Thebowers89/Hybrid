@@ -28,10 +28,10 @@ void init(){
         bar.init();
         init();
     }else if(s.ignorecase(cmd)=="help"){
-        cout << "\nchem: opens chemistry wiki" << endl
+        cout << "chem: opens chemistry wiki" << endl
         << "sci: opens telescience console" << endl
         << "food: opens food wiki" << endl
-        << "bar: opens drinks wiki\n" << endl;
+        << "bar: opens drinks wiki" << endl;
         init();
     }else if(s.ignorecase(cmd)=="exit"||s.ignorecase(cmd)=="e"){
     }else{
