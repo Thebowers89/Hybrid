@@ -6,6 +6,7 @@ int Bar::init() {
     Global global;
     cout << "Bar v1.0" << endl << "> ";
     getline(cin,cmd);
+    cmd = global.ignorecase(cmd);
     if(cmd=="list" || cmd=="search"){
         global.search(cmd,"DrinkList.txt",3,0);
         init();

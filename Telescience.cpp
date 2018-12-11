@@ -4,8 +4,10 @@
 #include <fstream>
 using namespace std;
 void Telescience::init(){
+    Global global;
     cout << "Telescience 5.0" << endl << "> ";
     getline(cin,saveload);
+    saveload = global.ignorecase(saveload);
     if(saveload=="load") {
         load();
     }else if(saveload=="build"){
