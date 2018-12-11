@@ -2,37 +2,38 @@
 #include "Telescience.h"
 #include "Food.h"
 #include "Bar.h"
+#include "Global.h"
 #include <iostream>
 using namespace std;
 
 string cmd;
 
 void init(){
+    Global s;
     cout << "SS13 Program Hub v1.0" << endl << "> ";
     getline(cin,cmd);
-    if(cmd=="chem"){
+    if(s.ignorecase(cmd)=="chem"){
         Chemistry chem;
         chem.init();
         init();
-    }else if(cmd=="sci"){
+    }else if(s.ignorecase(cmd)=="sci"){
         Telescience sci;
         sci.init();
         init();
-    }else if(cmd=="food"){
         Food food;
         food.init();
         init();
-    }else if(cmd=="bar"){
+    }else if(s.ignorecase(cmd)=="bar"){
         Bar bar;
         bar.init();
         init();
-    }else if(cmd=="help"){
-        cout << "chem: opens chemistry wiki" << endl
+    }else if(s.ignorecase(cmd)=="help"){
+        cout << "\nchem: opens chemistry wiki" << endl
         << "sci: opens telescience console" << endl
         << "food: opens food wiki" << endl
-        << "bar: opens drinks wiki" << endl;
+        << "bar: opens drinks wiki\n" << endl;
         init();
-    }else if(cmd=="exit"||cmd=="e"){
+    }else if(s.ignorecase(cmd)=="exit"||s.ignorecase(cmd)=="e"){
     }else{
         cout << "Invalid Command\n";
         init();

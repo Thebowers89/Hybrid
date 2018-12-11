@@ -6,6 +6,7 @@ int Chemistry::init() {
     Global global;
     cout << "Chemistry v2.0" << endl << "> ";
     getline(cin,cmd);
+    cmd = global.ignorecase(cmd);
     if(cmd=="list" || cmd=="search"){
         global.search(cmd,"ChemList.txt",3,s);
         init();

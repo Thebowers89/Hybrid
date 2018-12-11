@@ -61,6 +61,7 @@
 `Tortilla` `Ingredients: Unfinished Pizza Base` `Assembly: Knife`
 `Unfinished Pizza Base` `Ingredients: Dough` `Assembly: Rolling Pin`
 `Wonton Wrapper` `Ingredients: Flour + Egg` `Assembly: Mixer`
+`Wheat` `Assembly: You grow it` ``
 `Yoghurt` `Ingredients: Rancid Milk` `Assembly: Food Processor`
 `|Phude`
 `Apple On A Stick` `Ingredients: Apple + Metal Rod` `Assembly: Hand`

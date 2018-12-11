@@ -6,6 +6,7 @@ int Food::init() {
     Global global;
     cout << "Food v1.0" << endl << "> ";
     getline(cin,cmd);
+    cmd = global.ignorecase(cmd);
     if(cmd=="list" || cmd=="search"){
         global.search(cmd,"FoodList.txt",3,0);
         init();
