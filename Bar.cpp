@@ -2,6 +2,7 @@
 #include "Global.h"
 #include <iostream>
 using namespace std;
+
 int Bar::init() {
     Global global;
     cout << "Bar v1.0" << endl << "> ";

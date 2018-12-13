@@ -5,7 +5,7 @@ using namespace std;
 
 class Food {
 public:
-    init();
+    int init();
 private:
     string cmd;
 };

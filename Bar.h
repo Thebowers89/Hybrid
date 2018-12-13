@@ -5,7 +5,7 @@ using namespace std;
 
 class Bar {
 public:
-    init();
+    int init();
 private:
     string cmd;
 };
